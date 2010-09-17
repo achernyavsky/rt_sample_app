@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+ def logo
+    image_tag("logo.png", :alt => "Sample App", :class => "round")
+ end
+
  def title                                           # Method definition
     base_title = "Ruby on Rails Tutorial Sample App"  # Variable assignment
     if @title.nil?                                    # Boolean test for nil
